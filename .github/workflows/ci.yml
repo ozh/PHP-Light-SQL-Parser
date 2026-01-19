@@ -45,5 +45,8 @@ jobs:
       - name: Install dependencies
         run: composer install --prefer-dist --no-progress
       
-      - name: Run dummy test
-        run: php tests/dummy-test.php
+      - name: Verify PHPUnit installation
+        run: composer show phpunit/phpunit
+      
+      - name: Run tests
+        run: vendor/bin/phpunit
