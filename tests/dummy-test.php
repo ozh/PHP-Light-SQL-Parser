@@ -32,7 +32,7 @@ try {
     }
     require_once $autoloaderPath;
     echo CHECK_MARK . "\n";
-} catch (Exception $e) {
+} catch (Throwable $e) {
     echo CROSS_MARK . "\n";
     echo "Error loading autoloader: " . $e->getMessage() . "\n";
     exit(EXIT_FAILURE);
@@ -48,7 +48,7 @@ try {
         exit(EXIT_FAILURE);
     }
     echo CHECK_MARK . "\n";
-} catch (Exception $e) {
+} catch (Throwable $e) {
     echo CROSS_MARK . "\n";
     echo "Error instantiating class: " . $e->getMessage() . "\n";
     exit(EXIT_FAILURE);
@@ -85,7 +85,7 @@ try {
     }
     
     echo CHECK_MARK . "\n";
-} catch (Exception $e) {
+} catch (Throwable $e) {
     echo CROSS_MARK . "\n";
     echo "Error parsing query: " . $e->getMessage() . "\n";
     exit(EXIT_FAILURE);
