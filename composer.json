@@ -15,7 +15,15 @@
       "marcocesarato\\sqlparser\\": "src"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "marcocesarato\\sqlparser\\Tests\\": "tests/"
+    }
+  },
   "require": {
     "php": ">=4.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5 || ^9.0"
   }
 }
