@@ -41,8 +41,8 @@ try {
 // Step 2: Instantiate the class
 echo "[2/3] Instantiating LightSQLParser... ";
 try {
-    $parser = new marcocesarato\sqlparser\LightSQLParser();
-    if (!$parser instanceof marcocesarato\sqlparser\LightSQLParser) {
+    $parser = new \marcocesarato\sqlparser\LightSQLParser();
+    if (!$parser instanceof \marcocesarato\sqlparser\LightSQLParser) {
         echo CROSS_MARK . "\n";
         echo "Error: Failed to create LightSQLParser instance\n";
         exit(EXIT_FAILURE);
